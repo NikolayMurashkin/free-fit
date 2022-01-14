@@ -347,11 +347,11 @@ body {
   .menu__body {
     position: fixed;
     background-color: rgba(43, 53, 65, 0);
-    top: -1000%;
+    top: -100vh;
     height: 100vh;
     width: 100%;
     left: 0;
-    transition: top 0.3s ease-in-out 0s, background-color 0.2s ease 0s;
+    transition: top 0.3s ease-in-out 0s, background-color 0.1s ease 0s;
     overflow: auto;
   }
   .menu-open .menu__body {
@@ -1907,7 +1907,7 @@ body {
   left: 0;
   opacity: 0;
   transition: all 0.3s ease 0s;
-  background: url("../img/icons/check.svg") 0 0/contain no-repeat;
+  background: url("../img/check.svg") 0 0/contain no-repeat;
 }
 .subscribe__checkbox:checked::after {
   opacity: 1;
@@ -2213,7 +2213,7 @@ body.popup-show::after {
 }
 .popup__close::before {
   content: "";
-  background: url("../img/icons/close.svg") 0 0/cover no-repeat;
+  background: url("../img/close.svg") 0 0/cover no-repeat;
   width: 20px;
   height: 20px;
   display: inline-block;
