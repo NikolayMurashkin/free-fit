@@ -1,179 +1,270 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
+	<title>Главная</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220114222624">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «free-fit»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «free-fit»</h1>
-		<div class="rootpage__info">
-			Особенности проекта
-		</div>
-		<h2>Готовые страницы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Главная</a></li>
-		</ol>
-		<h2>Попапы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Спасибо за заказ!</h2>
-			<p>Буду рад (а) хорошему отзыву.</p>
-			<p>Обращайтесь еще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мои контакты:</h2>
-			<p>Почта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-			<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-			<p>Соц. сеть: <a href="">ссылка на соц. сеть</a></p>
+	<div class="wrapper">
+		<header class="header">
+			<a href="" class="header__logo" data-goto="#hero"><img src="img/logo.svg" alt=""></a>
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link" data-goto="#events">Мероприятия</a></li>
+							<li class="menu__item"><a href="" class="menu__link" data-goto="#schedule">Расписание</a></li>
+							<li class="menu__item"><a href="" class="menu__link" data-goto="#about">О компании</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__socials" data-da=".menu__body, 768">
+				<a href="www.instagram.com" class="header__instagram _icon-instagram"></a>
+				<a href="www.facebook.com" class="header__facebook _icon-facebook"></a>
+			</div>
+		</header>
+		<main class="page">
+			<section id="hero" class="page__hero hero">
+				<div class="hero__container">
+					<div class="hero__body">
+						<h1 class="hero__title">онлайн тренировки любой сложности</h1>
+						<h3 class="hero__subtitle"> 15 <span>тренировок</span></h3>
+						<p class="hero__text">в области спортивной физиологии и нутрициологии</p>
+						<button data-popup="#popup" class="hero__button button">Узнать подробнее</button>
+					</div>
+					<div class="hero__image">
+						<picture><source srcset="img/hero/hero-image.webp"type="image/webp"><img src="img/hero/hero-image.png" alt=""></picture>
+					</div>
+					<button class="hero__scroll-down _icon-arrow-down"></button>
+				</div>
+			</section>
+			<section id="events" class="page__events events">
+				<div class="events__container">
+					<h2 class="events__title">Ближайшие события</h2>
+					<div class="events__items items-events">
+						<div class="items-events__card-ibg">
+							<p class="items-events__date">29.06 - 4.07</p>
+							<h3 class="items-events__title">Марафон выносливости</h3>
+							<p class="items-events__label">марафон</p>
+							<button class="items-events__button button_grey" data-popup="#popup">Учавствовать</button>
+							<button class="items-events__button_plus button_grey" data-popup="#popup">+</button>
+							<picture><source srcset="img/events/1.webp"type="image/webp"><img src="img/events/1.png" alt="maraphon"></picture>
+						</div>
+						<div class="items-events__card-ibg">
+							<p class="items-events__date">9.07</p>
+							<h3 class="items-events__title">Как стать тренером?</h3>
+							<p class="items-events__label">вебинар</p>
+							<button class="items-events__button button_grey" data-popup="#popup">Учавствовать</button>
+							<button class="items-events__button_plus button_grey" data-popup="#popup">+</button>
+							<picture><source srcset="img/events/2.webp"type="image/webp"><img src="img/events/2.jpg" alt="how to become a trainer"></picture>
+						</div>
+						<div class="items-events__card-ibg">
+							<p class="items-events__date">15.07</p>
+							<h3 class="items-events__title">Йога, как стиль жизни</h3>
+							<p class="items-events__label">вебинар</p>
+							<button class="items-events__button button_grey" data-popup="#popup">Учавствовать</button>
+							<button class="items-events__button_plus button_grey" data-popup="#popup">+</button>
+							<picture><source srcset="img/events/3.webp"type="image/webp"><img src="img/events/3.jpg" alt="yoga lifestyle"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="schedule" class="page__schedule schedule">
+				<div class="schedule__container">
+					<div class="schedule__header">
+						<h2 class="schedule__title">Расписание тренировок</h2>
+						<p class="schedule__date">22 - 28 июня</p>
+					</div>
+					<div class="schedule__items">
+						<div class="schedule__left-col">
+							<div class="schedule__item item-schedule">
+								<p class="item-schedule__time">22 июня, 10:00</p>
+								<div class="item-schedule__footer">
+									<div class="item-schedule__icon _icon-body"></div>
+									<div class="item-schedule__header">
+										<h3 class="item-schedule__title">Функциональный тренинг</h3>
+										<p class="item-schedule__text">
+											Система занятий, которая включает тренировки тела для выполнения повседневных действий. Категории: спорт фитнес реабилитация.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="schedule__item item-schedule">
+								<p class="item-schedule__time">23 июня, 10:00</p>
+								<div class="item-schedule__footer">
+									<div class="item-schedule__icon _icon-jump"></div>
+									<div class="item-schedule__header">
+										<h3 class="item-schedule__title">Силовой микс</h3>
+										<p class="item-schedule__text">
+											Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="schedule__mid-col">
+							<div class="schedule__item item-schedule">
+								<p class="item-schedule__time">24 июня, 10:00</p>
+								<div class="item-schedule__footer">
+									<div class="item-schedule__icon _icon-bottle"></div>
+									<div class="item-schedule__header">
+										<h3 class="item-schedule__title">Body sculpt</h3>
+										<p class="item-schedule__text">
+											Силовой класс групповых занятий body sculpt – достаточно распространенное направление в мире фитнеса.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="schedule__item item-schedule">
+								<p class="item-schedule__time">25 июня, 11:00</p>
+								<div class="item-schedule__footer">
+									<div class="item-schedule__icon _icon-heart"></div>
+									<div class="item-schedule__header">
+										<h3 class="item-schedule__title">Дыхательные практики</h3>
+										<p class="item-schedule__text">
+											Дыхательная гимнастика – один из самых эффективных способов привести в порядок наше физическое и психологическое состояние
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="schedule__right-col">
+							<div class="schedule__item item-schedule">
+								<p class="item-schedule__time">26 июня, 11:00</p>
+								<div class="item-schedule__footer">
+									<div class="item-schedule__icon _icon-dumbbell"></div>
+									<div class="item-schedule__header">
+										<h3 class="item-schedule__title">L.A.B.</h3>
+										<p class="item-schedule__text">
+											Cиловая тренировка с акцентом на мышцы ягодиц, ног и пресса. Отличный помощник в развитии силы, выносливости, а также в снижении веса!
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="schedule__item item-schedule">
+								<p class="item-schedule__time">27 июня, 10:00</p>
+								<div class="item-schedule__footer">
+									<div class="item-schedule__icon _icon-weight"></div>
+									<div class="item-schedule__header">
+										<h3 class="item-schedule__title">Комплексная разминка</h3>
+										<p class="item-schedule__text">
+											Дыхательная гимнастика – один из самых эффективных способов привести в порядок наше физическое и психологическое состояние
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__subscribe subscribe">
+				<div class="subscribe__container">
+					<h2 class="subscribe__title">Подпишитесь на рассылку</h2>
+					<form class="subscribe__form">
+						<div class="subscribe__inputs">
+							<input type="email" required class="subscribe__input" placeholder="Ваш e-mail">
+							<button type="submit" data-da=".subscribe__footer, 572" class="subscribe__button button">ПОДПИСАТЬСЯ</button>
+						</div>
+						<div class="subscribe__footer">
+							<input checked id="checkbox" required type="checkbox" class="subscribe__checkbox">
+							<label class="subscribe__label" for="checkbox">Согласен с обработкой <a href="#">персональных данных</a> </label>
+						</div>
+					</form>
+
+				</div>
+			</section>
+			<section id="about" class="page__about about">
+				<div class="about__container">
+					<div class="about__top">
+						<div class="about__left">
+							<h2 class="about__title">О компании</h2>
+							<p class="about__text">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с нами и вы сами увидите, что мы проводим не только онлайн-тренировки.</p>
+							<button data-popup="#popup" class="about__button button" data-da=".about__bottom, 479, 4">Записаться</button>
+						</div>
+						<div class="about__image-ibg" data-da=".about__bottom, 479, 5">
+							<picture><source srcset="img/about/about-image.webp"type="image/webp"><img src="img/about/about-image.jpg" alt="girl trainer"></picture>
+						</div>
+					</div>
+					<div class="about__bottom">
+						<div class="about__col">
+							<h3 class="about__subtitle">Экономия времени</h3>
+							<p class="about__subtext">Не нужно тратить время на дорогу</p>
+						</div>
+						<div class="about__col">
+							<h3 class="about__subtitle">Индивидуальный подход</h3>
+							<p class="about__subtext">Внимание тренера пренадлежит только вам</p>
+						</div>
+						<div class="about__col">
+							<h3 class="about__subtitle">Экономия денег</h3>
+							<p class="about__subtext">Средняя цена одной тренировки - 700₽</p>
+						</div>
+						<div class="about__col">
+							<h3 class="about__subtitle">Опытный персонал</h3>
+							<p class="about__subtext">Стаж работы у наших тренеров от 5 лет</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div></div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<a href="#" class="footer__logo" data-goto="#hero"><img src="img/logo.svg" alt=""></a>
+					<nav class="footer__menu">
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link" data-goto="#events">Мероприятия</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link" data-goto="#schedule">Расписание</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link" data-goto="#about">О компании</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer__contacts">
+						<a href="mailto:info@freefit.com">info@freefit.com</a>
+						<a href="https://www.instagram.com/" class="footer__instagram _icon-instagram"></a>
+						<a href="https://www.facebook.com/" class="footer__facebook _icon-facebook"></a>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<p class="footer__privacy">© 2020, Все права защищены</p>
+					<p class="footer__info">Developed by <a target="_blank" href="https://t.me/maschinist23">Nikolay Murashkin</a></p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<h2 class="popup__title">Заявка на участие
+					«Марафон выносливости»</h2>
+				<p class="popup__text">Заполните все поля, и мы пришлем информацию в ближайшее время</p>
+				<form class="popup__form">
+					<input type="email" required class="popup__input" placeholder="Ваш e-mail">
+					<input type="number" required class="popup__input" placeholder="Ваш номер телефона">
+					<button class="popup__button button">Отправить</button>
+				</form>
+			</div>
 		</div>
 	</div>
+
+	<script src="js/app.min.js?_v=20220114222624"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>
