@@ -1553,7 +1553,7 @@ body {
 }
 .schedule__date {
   font-size: 700px;
-  line-height: 35 28;
+  line-height: 1.25;
 }
 @media (min-width: 72.5em) {
   .schedule__date {
